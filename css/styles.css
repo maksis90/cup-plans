@@ -1,0 +1,123 @@
+@font-face {
+	font-family: MisoLight;
+	src:url("fonts/MisoLight/miso-light.eot?")
+	format("eot"),url("fonts/MisoLight/miso-light.woff") 
+	format("woff"),url("fonts/MisoLight/miso-light.ttf") 
+	format("truetype"),url("fonts/MisoLight/miso-light.svg#MisoLight") 
+	format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {font-family: MisoBold;
+	src:url("fonts/MisoBold/miso-bold.eot?") 
+	format("eot"),url("fonts/MisoBold/miso-bold.woff") 
+	format("woff"),url("fonts/MisoBold/miso-bold.ttf") 
+	format("truetype"),url("fonts/MisoBold/miso-bold.svg#Miso-Bold") 
+	format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+:root {
+	--font: MisoLight;
+	--title: MisoBold;
+	--green: #02995b;
+	--grey: #333333;      
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	height: 100%;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+
+body {
+ font-family: MisoBold, sans-serif;
+ background: #fdde7e;
+}
+
+.container {
+	max-width: 1170px;
+	width: 100%;
+	padding: 50px 15px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.cup {
+	height: 440px;
+	width: 32%;
+	background: #FFF;
+	color: var(--grey);
+	font-family: var(--font);
+	border-radius: 2px;
+	padding: 3% 10%;
+	text-align: center;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	justify-content: space-between;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.cup--main {
+	height: 500px;
+}
+
+.cup__price {
+	font: 70px var(--title);
+	color: var(--green);
+}
+
+.cup__price--main {
+	padding-bottom: 15px;
+}
+
+.cup__title {
+	font-size: 56px;
+	font-weight: 600;
+}
+
+.cup__subtitle {
+	font-size: 20px;
+	line-height: 26px;
+	letter-spacing: .25px;
+}
+
+
+
+
